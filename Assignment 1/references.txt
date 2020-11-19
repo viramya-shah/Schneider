@@ -1,0 +1,5 @@
+Ontology:
+1. https://www.yworks.com/use-case/visualizing-an-ontology
+2. https://www.kdnuggets.com/2017/05/ontology-simplest-definition.html
+3. https://www.topquadrant.com/ontologies-and-data-models-are-they-the-same/
+4. https://edblogs.columbia.edu/musiconis/2018/01/25/ontologies-vs-traditional-database-models-and-the-semantic-web/
