@@ -162,7 +162,7 @@ if __name__ == '__main__':
     )
 
     mlp_gs.fit(X_train, train_label_df)
-    pickle.dump(mlp_gs.best_estimator_, open("./data/output/models/rf.pkl", 'wb'))
+    pickle.dump(mlp_gs.best_estimator_, open("./data/output/models/mlp.pkl", 'wb'))
     pred_mlp = mlp_gs.best_estimator_.predict(X_test)
 
     error_l2_mlp = sum([eucledian_distance(i, j) for i, j in zip(test_label_df.values, pred_mlp)])/len(test_label_df)
@@ -189,7 +189,7 @@ if __name__ == '__main__':
 
     extratree_gs.fit(X_train, train_label_df)
     pred_etc = extratree_gs.best_estimator_.predict(X_test)
-    pickle.dump(extratree_gs.best_estimator_, open("./data/output/models/rf.pkl", 'wb'))
+    pickle.dump(extratree_gs.best_estimator_, open("./data/output/models/etc.pkl", 'wb'))
 
     error_l2_etc = sum([eucledian_distance(i, j) for i, j in zip(test_label_df.values, pred_etc)])/len(test_label_df)
     error_l1_etc = sum([manhattan_distance(i, j) for i, j in zip(test_label_df.values, pred_etc)])/len(test_label_df)
